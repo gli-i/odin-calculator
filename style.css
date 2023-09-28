@@ -1,0 +1,85 @@
+:root {
+    --bg: rgb(255, 254, 240);
+    --frame: rgb(187, 220, 194);
+    --light: rgb(255, 255, 255);
+    --dark: rgb(140, 167, 130);
+    --text: rgb(142, 95, 103);
+    --bd-light: rgb(238, 170, 170);
+    --bd-dark: rgb(221, 151, 126);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--bg);
+}
+#frame {
+    width: 60vmin;
+    height: 80vmin;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5%;
+    align-items: center;
+
+    background-color: var(--frame);
+    border: 2px solid var(--bd-dark);
+    border-radius: 30px;
+}
+#display {
+    height: 15%;
+    width: 100%;
+    flex : 1;
+    display: flex;
+    align-items: center;
+
+    border: 2px solid var(--bd-light);
+    background-color: var(--light);
+    border-radius: 15px;
+}
+#display p {
+    padding-left: 5%;
+
+    font-size: 1.8em;
+    color: var(--text);
+}
+
+#buttons {
+    width: 100%;
+    flex: 5;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 2px solid var(--bd-light);
+    background-color: var(--dark);
+    border-radius: 15px;
+}
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+#buttons button {
+    font-size: 2em;
+    padding: 15px;
+    flex: 1;
+
+    color: var(--text);
+    background-color: var(--light);
+    border: 1px solid var(--bd-light);
+    border-radius: 10px;
+}
+#buttons .two-wide {
+    flex: 2;
+}
